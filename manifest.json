@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
 
-  "name": "percent_calculator",
-  "description": "percent_calculator",
-  "version": "1.0",
+  "name": "퍼센트계산기",
+  "description": "퍼센트 계산에 관련된 행위를 할 수 있습니다",
+  "version": "1.2",
 
   "browser_action": {
-    "default_icon": "percentage-icon.png",
+    "default_icon": "calculator.png",
     "default_popup": "popup.html",
     "default_title": "Click here!"
   },

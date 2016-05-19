@@ -6,22 +6,64 @@
 
 </head>
 <body>
-<div>
-    <ul>
-        <li>
-            <input type="text" id="number" placeholder="값 입력">의 <input type="text" id="percent" placeholder="퍼센트 입력">%는 얼마?
-        </li>
-        <li class="btn-area">
-            <span id="calc-btn">계산</span>
-        </li>
+
+<div class="info">
+    <img src="calculator.png" id="percent-icon">
+    <p>원하시는 계산법을 눌러주세요</p>
+</div>
+
+
+<div class="button-area">
+    <ul class="tabs">
+        <li class="active" rel="tab1" id="h-tab1">비율값</li>
+        <li rel="tab2" id="h-tab2">일부값</li>
+        <li rel="tab3" id="h-tab3">증가값</li>
+        <li rel="tab4" id="h-tab4">감소값</li>
     </ul>
+    <div class="tab_container">
+        <div id="tab1" class="tab_content">
+            <ul>
+                <li class="action-area">
+                    <input type="text" id="number_tab1" placeholder="전체값">의 <input type="text" id="percent_tab1" placeholder="퍼센트">% 는 얼마?
+                </li>
+                <li class="result-area">
+                    <span id="result-tab1">숫자를 입력하고 엔터!</span>
+                </li>
+            </ul>
+        </div>
+        <div id="tab2" class="tab_content">
+            <ul>
+                <li class="action-area">
+                    <input type="text" id="number_tab2" placeholder="전체값">의 <input type="text" id="percent_tab2" placeholder="일부값">은 몇 퍼센트?
+                </li>
+                <li class="result-area">
+                    <span id="result-tab2">숫자를 입력하고 엔터!</span>
+                </li>
+            </ul>
+        </div>
+        <div id="tab3" class="tab_content">
+            <ul>
+                <li class="action-area">
+                    <input type="text" id="number_tab3" placeholder="전체값">를 몇 <input type="text" id="percent_tab3" placeholder="퍼센트">% 증가 시키면 얼마?
+                </li>
+                <li class="result-area">
+                    <span id="result-tab3">숫자를 입력하고 엔터!</span>
+                </li>
+            </ul>
+        </div>
+        <div id="tab4" class="tab_content">
+            <ul>
+                <li class="action-area">
+                    <input type="text" id="number_tab4" placeholder="전체값">를 몇 <input type="text" id="percent_tab4" placeholder="퍼센트">% 감소 시키면 얼마?
+                </li>
+                <li class="result-area">
+                    <span id="result-tab4">숫자를 입력하고 엔터!</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
 </div>
-
-<div class="result-area">
-<span>엔터나 계산버튼을 누르세요</span>
-</div>
-
-
 </body>
 <script src="popup.js"></script>
 </html>

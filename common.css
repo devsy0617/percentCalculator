@@ -1,45 +1,117 @@
 BODY {
-    background: #EFEFEF;
-    width:520px;
-    min-height: 100px;
+    background: #F3F3F3;
+    width:300px;
+    min-height: 250px;
     font-size: 13px;
+    margin: 0;
+    text-align: center;
 }
 
-ul {
+#percent-icon {
+    width: 85px;
+    padding : 20px 20px 10px 20px;
+}
+
+.info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444444;
+}
+
+.button-area {
+    margin-top : 10px;
+}
+
+ul.tabs {
+    margin: 0;
+    padding: 0;
+    float: left;
     list-style: none;
+    height: 32px;
+    width: 100%;
+    font-size:12px;
+}
+ul.tabs li{
+    float: left;
+    text-align:center;
+    cursor: pointer;
+    width:25%;
+    height: 30px;
+    line-height: 30px;
+    background: #fafafa;
+    overflow: hidden;
+    position: relative;
+    color: #333;
 }
 
-#percent,#number {
-    margin : 18px 5px 0 10px;
-    height:30px;
+ul.tabs #h-tab1 {
+    background: #FC6D65;
+}
+
+ul.tabs #h-tab2 {
+    background: #FF9E1B;
+}
+
+ul.tabs #h-tab3 {
+    background: #4A80D0;
+}
+
+ul.tabs #h-tab4 {
+    background: #7F4FBF;
+}
+
+ul.tabs li.active {
+    background: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.tab_container {
+    border-top: none;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.tab_content {
+    width: 100%;
+    font-size: 12px;
+}
+.tab_container .tab_content ul {
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+.tab_container .tab_content ul li {
+    padding:5px;
+    list-style:none;
+}
+
+#container {
+    width: 249px;
+    margin: 0 auto;
+}
+
+.action-area {
+    margin: 5px;
+}
+
+.action-area input {
+    width: 55px;
+    height: 20px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 3px;
+    border: 0;
+    font-size: 13px;
 }
 
 .result-area {
     text-align: center;
     height: 30px;
-    background: #ffffff;
+    background: #B5B5B5;
     line-height: 30px;
-    font-size: 20px;
-    font-weight: 600;
-    border: 2px solid #FFFDFD;
 }
 
 .result-area span{
-    color: #6F6F6F;
-}
-
-.btn-area {
-    position: absolute;
-    top: 40px;
-    right: 30px;
-    list-style: none;
-}
-
-#calc-btn{
-    padding: 10px 20px 10px 20px;
-    border-radius: 3px;
-    border-width: 0px;
-    background: #6F6F6F;
     color: #ffffff;
-    cursor: pointer;
 }
